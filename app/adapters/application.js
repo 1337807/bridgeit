@@ -1,4 +1,4 @@
 export default DS.ActiveModelAdapter.extend({
-  host: 'http://localhost:3000',
+  host: ENV.APP.API_URL,
   namespace: 'api/v1'
 });
