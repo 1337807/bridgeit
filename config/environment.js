@@ -27,7 +27,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.APP.API_URL = 'http://bridgeit.herokuapp.com'
+    ENV.APP.API_URL = 'http://bridgeitapi.herokuapp.com'
   }
 
   return ENV;
