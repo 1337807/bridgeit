@@ -1,12 +1,14 @@
-<label>
-  Name:
-  {{fooname}}
-  {{input value=name}}
-</label>
-<br/>
-<label>
-  Email:
-  {{input value=emailAddress}}
-</label>
-<br/>
-<button {{action 'save' model}}>Save</button>
+<div id="form-container" class="container form-group">
+  <form>
+    <label id='name' class='control-label'>Name:
+      {{input class='name form-control' placeholder='Open Source Citizen' value=name}}
+    </label>
+    <br/>
+    <label id='email' class='control-label'>
+      Email:
+      {{input class='email form-control' placeholder='citizen@osb.org' value=emailAddress}}
+    </label>
+    <br/>
+    <button id='save' class='btn btn-primary btn-lg pull-right' {{action 'save' model}}>Save</button>
+  </form>
+</div>
