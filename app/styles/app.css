@@ -28,6 +28,12 @@ div#form-container {
   width: 430px;
 }
 
+div#notification {
+  font-size: 24px;
+  margin-top: 58px;
+  display: none;
+}
+
 .form-control::-webkit-input-placeholder {
   color: #ccc;
 }
